@@ -1,88 +1,89 @@
 <!DOCTYPE html>
 <html lang="uk">
 <head>
-<link rel="preconnect" href="https://fonts.googleapis.com">   
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="assets/css/style.css">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>PotuzhnoShop</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">   
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>PotuzhnoShop</h1>
-        <nav>
-            <ul>
+    <header class="header">
+        <div class="logo">
+            <h2>PotuzhnoShop</h2>
+        </div>
+        
+        <nav class="main-nav">
+            <ul class="nav-list">
                 <li><a href="#">Головна</a></li>
-                <li><a href="#">Товари</a></li>
+                <li><a href="#shop">Товари</a></li>
                 <li><a href="#">Про нас</a></li>
                 <li><a href="#">Контакти</a></li>
-                <li><a href="#">Кошик</a></li>
             </ul>
         </nav>
-    </header>
-<main>
 
-    <section class="hero">
-        <div class="hero-content">
-            <h2>Твоя потужна техніка тут</h2>
-            <p>Найкращі потужні гаджети за потужними цінами</p>
-            <a href="#" class="btn">Каталог потужних товарів</a>
+        <div class="user-actions">
+            <button class="btn">Кошик (0)</button>
         </div>
-    </section>
-    
-<section>
-    <h2>Новинки 2026</h2>
-    <p> Відкрийте для себе майбутнє технологій вже сьогодні.</p>
-    <a href="#shop">Переглянути каталог</a>
-</section>
+    </header>
 
-<section id="shop">
-    <h2>Популярні товари</h2>
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Твоя потужна техніка тут</h2>
+                <p>Найкращі потужні гаджети за потужними цінами</p>
+                <a href="#shop" class="btn">Каталог потужних товарів</a>
+            </div>
+        </section>
+        
+        <section id="shop" class="catalog">
+            <h2 style="text-align: center; margin: 40px 0;">Популярні товари</h2>
+            
+            <div class="products-grid">
+                <div class="product-card">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOIWZAK8ueoMCZ7XHj19uyZoEJazWsNdbMXg&s" alt="Потужнофон" class="product-img">
+                    <h3 class="product-title">Потужнофон 16 Pro</h3>
+                    <p class="product-desc">Потужний процесор та потужна камера для потужних моментів.</p>
+                    <span class="product-price">67 676 грн</span>
+                    <button type="button" class="btn btn-buy">Купити</button>
+                </div>
 
-    <article>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOIWZAK8ueoMCZ7XHj19uyZoEJazWsNdbMXg&s" alt="Потужнофон">
-        <h3>Потужнофон 16 Pro</h3>
-        <p> Потужний процесор та потужна камера для потужних моментів.</p>
-        <span>Ціна: 67676 грн</span>
-        <button type="button">Купити</button>
-    </article>
+                <div class="product-card">
+                    <img src="https://i.pinimg.com/736x/bb/fb/7f/bbfb7fe28b2bb34337d98a2a4c5508d6.jpg" alt="Потужноноутбук" class="product-img">
+                    <h3 class="product-title">Потужноноутбук 16 Pro</h3>
+                    <p class="product-desc">Потужне рішення для програмування та графічного дизайну.</p>
+                    <span class="product-price">69 676 грн</span>
+                    <button type="button" class="btn btn-buy">Купити</button>
+                </div>
 
-    <article>
-        <img src="https://i.pinimg.com/736x/bb/fb/7f/bbfb7fe28b2bb34337d98a2a4c5508d6.jpg" alt="Потужноноутбук">
-        <h3>Потужноноутбук 16 Pro</h3>
-        <p> Потужне рішення для програмування та графічного дизайну.</p>
-        <span>Ціна: 69676 грн</span>
-        <button type="button">Купити</button>
-    </article>
+                <div class="product-card">
+                    <img src="https://i.pinimg.com/736x/e0/dc/68/e0dc684f2b8b387a9ba0756cf8c4628f.jpg" alt="Потужновушники" class="product-img">
+                    <h3 class="product-title">Потужновушники Ptzhn F3</h3>
+                    <p class="product-desc">Кристально потужний звук із активним непотужнозаглушенням.</p>
+                    <span class="product-price">6 767 грн</span>
+                    <button type="button" class="btn btn-buy">Купити</button>
+                </div>
+            </div>
+        </section>
+    </main>
 
-    <article>
-        <img src="https://i.pinimg.com/736x/e0/dc/68/e0dc684f2b8b387a9ba0756cf8c4628f.jpg" alt="Потужновушники">
-        <h3>Потужновушники Ptzhn F3</h3>
-        <p> Кристально потужний звук із активним непотужнозаглушенням.</p>
-        <span>Ціна: 6767 грн</span>
-        <button type="button">Купити</button>
-    </article>
-</section>
-</main>
+    <footer style="padding: 40px 5%; background-color: #f9fafb; margin-top: 40px; border-top: 1px solid #eee;">
+        <section style="margin-bottom: 20px;">
+            <h3>Підпишіться на розсилку</h3>
+            <form style="display: flex; gap: 10px; margin-top: 15px;">
+                <input type="email" placeholder="Ваш email" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; flex-grow: 1; max-width: 300px;">
+                <button type="submit" class="btn">Підписатися</button>
+            </form>
+        </section>
 
-<footer>
-    <section>
-        <h3>Підпишіться на розсилку</h3>
-        <form>
-            <input type="email" placeholder="Ваш email" required>
-            <button type="submit">Підписатися</button>
-        </form>
-    </section>
-
-    <div>
-        <p>Контакти: +380 00 000 00 00 | info@PotuzhnoShop.com</p>
-        <p>&copy; 2026 PotuzhnoShop. Всі права захищені.</p>
-
-        <ul></ul>
-    </div>
-</footer>
-    
+        <div style="font-size: 0.9rem; color: #6b7280;">
+            <p>Контакти: +380 00 000 00 00 | info@PotuzhnoShop.com</p>
+            <p>&copy; 2026 PotuzhnoShop. Всі права захищені.</p>
+        </div>
+    </footer>
 </body>
 </html>
