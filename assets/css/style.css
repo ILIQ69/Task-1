@@ -65,7 +65,7 @@ a:hover {
     transform: translateY(-2px);
     color: white;
 }
-
+/* Hero section*/
 .hero {
     height: 60vh;
     background-image: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)), url('https://i.pinimg.com/736x/95/3c/2b/953c2be0eda365f6906d352418d36bac.jpg');
@@ -117,7 +117,7 @@ a:hover {
 }
 
 /*
-   6. Сітка товарів (МАГІЯ CSS GRID)*/
+   6. Сітка товарів */
 .products-grid {
     display: grid;
     /* Автоматично розраховує кількість карток. Мінімум 280px, максимум - розтягується */
@@ -155,8 +155,7 @@ a:hover {
 }
 
 /*
-   7. АДАПТИВНІСТЬ (Media Queries)*/
-/* Правила спрацюють ТІЛЬКИ на екранах, менших за 768px (Планшети та Мобілки) */
+   7. (Media Queries)*/
 @media screen and (max-width: 768px) {
     /* 1. Ламаємо 2 колонки в 1 */
     .page-layout {
@@ -171,7 +170,7 @@ a:hover {
     }
 
     .main-nav .nav-list {
-        flex-wrap: wrap; /* Дозволяємо пунктам меню переноситися */
+        flex-wrap: wrap; 
         justify-content: center;
     }
 }
