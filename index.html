@@ -31,44 +31,64 @@
         </div>
     </header>
 
-    <main>
-        <section class="hero">
-            <div class="hero-content">
-                <h2>Твоя потужна техніка тут</h2>
-                <p>Найкращі потужні гаджети за потужними цінами</p>
-                <a href="#shop" class="btn">Каталог потужних товарів</a>
-            </div>
-        </section>
-        
-        <section id="shop" class="catalog">
-            <h2 style="text-align: center; margin: 40px 0;">Популярні товари</h2>
+    <<main class="page-layout">
+        <aside class="sidebar">
+            <h3>Потужні фільтри</h3>
             
-            <div class="products-grid">
-                <div class="product-card">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOIWZAK8ueoMCZ7XHj19uyZoEJazWsNdbMXg&s" alt="Потужнофон" class="product-img">
-                    <h3 class="product-title">Потужнофон 16 Pro</h3>
-                    <p class="product-desc">Потужний процесор та потужна камера для потужних моментів.</p>
-                    <span class="product-price">67 676 грн</span>
-                    <button type="button" class="btn btn-buy">Купити</button>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://i.pinimg.com/736x/bb/fb/7f/bbfb7fe28b2bb34337d98a2a4c5508d6.jpg" alt="Потужноноутбук" class="product-img">
-                    <h3 class="product-title">Потужноноутбук 16 Pro</h3>
-                    <p class="product-desc">Потужне рішення для програмування та графічного дизайну.</p>
-                    <span class="product-price">69 676 грн</span>
-                    <button type="button" class="btn btn-buy">Купити</button>
-                </div>
-
-                <div class="product-card">
-                    <img src="https://i.pinimg.com/736x/e0/dc/68/e0dc684f2b8b387a9ba0756cf8c4628f.jpg" alt="Потужновушники" class="product-img">
-                    <h3 class="product-title">Потужновушники Ptzhn F3</h3>
-                    <p class="product-desc">Кристально потужний звук із активним непотужнозаглушенням.</p>
-                    <span class="product-price">6 767 грн</span>
-                    <button type="button" class="btn btn-buy">Купити</button>
-                </div>
+            <div class="filter-group">
+                <h4>Категорії</h4>
+                <ul style="list-style: none; padding: 0;">
+                    <li><label><input type="checkbox"> Смартфони</label></li>
+                    <li><label><input type="checkbox"> Ноутбуки</label></li>
+                    <li><label><input type="checkbox"> Навушники</label></li>
+                </ul>
             </div>
-        </section>
+            
+            <div class="filter-group" style="margin-top: 20px;">
+                <h4>Ціна</h4>
+                <input type="range" min="1000" max="100000" style="width: 100%;">
+            </div>
+        </aside>
+
+        <div class="content-area">
+            <section class="hero" style="margin-bottom: 40px;">
+                <div class="hero-content">
+                    <h2>Твоя потужна техніка тут</h2>
+                    <p>Найкращі потужні гаджети за потужними цінами</p>
+                    <a href="#shop" class="btn">Каталог потужних товарів</a>
+                </div>
+            </section>
+            
+            <section id="shop" class="catalog">
+                <h2 style="text-align: center; margin-bottom: 30px;">Популярні товари</h2>
+                
+                <div class="products-grid">
+                    <div class="product-card">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTOIWZAK8ueoMCZ7XHj19uyZoEJazWsNdbMXg&s" alt="Потужнофон" class="product-img">
+                        <h3 class="product-title">Потужнофон 16 Pro</h3>
+                        <p class="product-desc">Потужний процесор та потужна камера для потужних моментів.</p>
+                        <span class="product-price">67 676 грн</span>
+                        <button type="button" class="btn btn-buy">Купити</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://i.pinimg.com/736x/bb/fb/7f/bbfb7fe28b2bb34337d98a2a4c5508d6.jpg" alt="Потужноноутбук" class="product-img">
+                        <h3 class="product-title">Потужноноутбук 16 Pro</h3>
+                        <p class="product-desc">Потужне рішення для програмування та графічного дизайну.</p>
+                        <span class="product-price">69 676 грн</span>
+                        <button type="button" class="btn btn-buy">Купити</button>
+                    </div>
+
+                    <div class="product-card">
+                        <img src="https://i.pinimg.com/736x/e0/dc/68/e0dc684f2b8b387a9ba0756cf8c4628f.jpg" alt="Потужновушники" class="product-img">
+                        <h3 class="product-title">Потужновушники Ptzhn F3</h3>
+                        <p class="product-desc">Кристально потужний звук із активним непотужнозаглушенням.</p>
+                        <span class="product-price">6 767 грн</span>
+                        <button type="button" class="btn btn-buy">Купити</button>
+                    </div>
+                </div>
+            </section>
+        </div>
     </main>
 
     <footer style="padding: 40px 5%; background-color: #f9fafb; margin-top: 40px; border-top: 1px solid #eee;">
