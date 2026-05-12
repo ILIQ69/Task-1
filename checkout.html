@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Оформлення замовлення - PotuzhnoShop</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/form.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <a href="index.html">Головна</a>
+        </nav>
+    </header>
+
+    <main>
+        <h2>Оформлення замовлення</h2>
+        
+        <form action="#" method="POST" class="checkout-form">
+            <!-- Блок 1: Особисті дані -->
+            <fieldset>
+                <legend>1. Особисті дані</legend>
+                <div class="form-group">
+                    <label for="fullName">ПІБ:</label>
+                    <input type="text" id="fullName" name="fullName" required placeholder="Іванов Іван Іванович">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Телефон:</label>
+                    <input type="tel" id="phone" name="phone" pattern="[\+]\d{2}\d{10}" placeholder="+380991234567" required title="Формат: +380XXXXXXXXX">
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>2. Спосіб доставки</legend>
+                <div class="form-radio">
+                    <input type="radio" id="deliveryNova" name="delivery" value="nova_poshta" checked>
+                    <label for="deliveryNova">Нова Пошта</label>
+                </div>
+                <div class="form-radio">
+                    <input type="radio" id="deliveryCourier" name="delivery" value="courier">
+                    <label for="deliveryCourier">Кур'єр за адресою</label>
+                </div>
+                
+                <div class="form-group" style="margin-top: 1rem;">
+                    <label for="city">Місто:</label>
+                    <select id="city" name="city">
+                        <option value="kyiv">Київ</option>
+                        <option value="lviv">Львів</option>
+                        <option value="odesa">Одеса</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>3. Додаткова інформація</legend>
+                <div class="form-group">
+                    <label for="comment">Коментар до замовлення:</label>
+                    <textarea id="comment" name="comment" rows="4" placeholder="Напишіть ваші побажання тут..."></textarea>
+                </div>
+                
+                <div class="form-checkbox">
+                    <input type="checkbox" id="agreement" name="agreement" required>
+                    <label for="agreement">Я погоджуюсь з правилами магазину</label>
+                </div>
+            </fieldset>
+
+            <button type="submit" class="btn btn-primary">Підтвердити замовлення</button>
+        </form>
+    </main>
+
+    <footer style="padding: 40px 5%; background-color: #f9fafb; margin-top: 40px; border-top: 1px solid #eee;">
+        <section style="margin-bottom: 20px;">
+            <h3>Підпишіться на розсилку</h3>
+            <form style="display: flex; gap: 10px; margin-top: 15px;">
+                <input type="email" placeholder="Ваш email" required style="padding: 10px; border: 1px solid #ccc; border-radius: 5px; flex-grow: 1; max-width: 300px;">
+                <button type="submit" class="btn">Підписатися</button>
+            </form>
+        </section>
+
+        <div style="font-size: 0.9rem; color: #6b7280;">
+            <p>Контакти: +380 00 000 00 00 | info@PotuzhnoShop.com</p>
+            <p>&copy; 2026 PotuzhnoShop. Всі права захищені.</p>
+        </div>
+    </footer>
+</body>
+</html>
