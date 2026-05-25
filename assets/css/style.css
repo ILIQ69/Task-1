@@ -154,12 +154,37 @@ a:hover {
     width: 100%;
 }
 
-/*
-   7. (Media Queries)*/
+/* Стилі для соцмереж (Для всіх екранів) */
+.social-links {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+    padding: 0;
+    justify-content: center;
+}
+
+.social-links a {
+    color: #333;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: var(--primary-color);
+}
+
+/* БУРГЕР-МЕНЮ */
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* 7. (Media Queries) */
 @media screen and (max-width: 768px) {
     /* 1. Ламаємо 2 колонки в 1 */
     .page-layout {
-        grid-template-columns: 1fr; /* Тепер сайдбар і контент йдуть один під одним */
+        grid-template-columns: 1fr;
         padding: 15px 5%;
     }
 
@@ -169,8 +194,18 @@ a:hover {
         gap: 15px;
     }
 
+    /* 3. Нова логіка для бургер-меню */
+    .menu-toggle {
+        display: block; /* Показуємо бургер */
+    }
+    
     .main-nav .nav-list {
-        flex-wrap: wrap; 
-        justify-content: center;
+        display: none; /* Ховаємо текстове меню, бо тепер є бургер */
+    }
+
+    h2 {
+        font-size: 1.5rem;
     }
 }
+
+    
